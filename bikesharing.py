@@ -8,8 +8,8 @@ from sklearn.preprocessing import StandardScaler
 
 # Function to load data
 def load_data():
-    day_url = 'https://raw.githubusercontent.com/anbndct/bike-sharing-dataset/main/day.csv'
-    hour_url = 'https://raw.githubusercontent.com/anbndct/bike-sharing-dataset/main/hour.csv'
+    day_url = 'day.csv'
+    hour_url = 'hour.csv'
     day_df = pd.read_csv(day_url)
     hour_df = pd.read_csv(hour_url)
     day_df['dteday'] = pd.to_datetime(day_df['dteday'])
